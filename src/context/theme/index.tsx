@@ -1,0 +1,1 @@
+export {ThemeContext, default} from './themeContext';

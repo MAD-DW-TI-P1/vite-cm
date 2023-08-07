@@ -1,7 +1,9 @@
-import React, { useState, useEffec } from 'react';
+import React, { useState, useEffec, useContext } from 'react';
 import Invitation from './Invitation';
 import {urlApi} from '../servicies/urls';
 import useFetch from '../hooks/useFetch';
+
+
 
 function Invitations() {
   
@@ -57,7 +59,7 @@ function Invitations() {
   }
 
   return (
-    <div>
+    <>
       <h1>Invitaciones</h1>
       <input
         type="search"
@@ -79,7 +81,7 @@ function Invitations() {
         ))}
         {response.data && makeSelect(response.data)}
       </div>
-    </div>
+    </>
   );
 }
 
