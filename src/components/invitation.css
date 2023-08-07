@@ -1,0 +1,9 @@
+.card {
+  width: 300px;
+  height: 300px;
+}
+
+input, select {
+  max-width: 300px;
+  margin: 0 auto;
+}
