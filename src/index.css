@@ -18,7 +18,7 @@ h1 {
 }
 
 .oscuro {
-  background-color: #fff;
+  background-color: #fff; 
   filter: invert(1) hue-rotate(180deg);
 }
 .aux {

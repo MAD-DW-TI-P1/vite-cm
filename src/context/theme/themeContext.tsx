@@ -1,6 +1,6 @@
 import {createContext, useState} from "react";
 
-import {ThemeContextState, MyCOntextProp} from "./types";
+import {ThemeContextState, MyContextProp} from "./types";
 
 const contextDefaultValues: ThemeContextState = {
     theme: "claro",
@@ -11,7 +11,7 @@ export const ThemeContext = createContext<ThemeContextState>(
     contextDefaultValues
 );
 
-const ThemeProvider = ({children}: MyCOntextProp) => {
+const ThemeProvider = ({children}: MyContextProp) => {
     const [theme, setTheme] = useState<string>(contextDefaultValues.theme);
     const handleTheme = (newTheme: string) => {
         if (newTheme === 'claro') setTheme("claro");

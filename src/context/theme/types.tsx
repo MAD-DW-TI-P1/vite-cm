@@ -3,6 +3,6 @@ export interface ThemeContextState {
     handleTheme: (nameTheme: string) => void;
 }
 
-export interface MyCOntextProp {
+export interface MyContextProp {
     children:JSX.Element
 }
